@@ -1,0 +1,25 @@
+<form id="content-form" name="content-form" method="POST" enctype="multipart/form-data" action="/content/$content_id">
+    <input type="hidden" value="content-form" name="form[id]"/>
+
+    <label for="content[title]">Title:</label>
+    <input type="text" class="text" name="content[title]" id="content[title]" value="$title">
+
+    <label for="content[alias]">Permanent URL / Alias:</label>
+    <input type="text" class="text" name="content[alias]" id="content[alias]" value="$alias">
+
+    <span class="help-block">Example block-level help text here.</span>
+    <label class="checkbox">
+        <input type="checkbox"> Check me out
+    </label>
+
+    <textarea name="content[content]" id="content[content]" class="field span12" rows="20">
+        <%- body %>
+    </textarea>
+
+    <textarea class="field span12" rows="20">
+        <%- teaser %>
+    </textarea>
+
+    <button type="submit" class="btn">Submit</button>
+</form>
+

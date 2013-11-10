@@ -1,0 +1,26 @@
+<!--  JQuery -->
+<script src="/js/jquery-1.4.4.min.js"></script>
+<script src="/js/jquery.cookie.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+
+<!--  Prettify -->
+<script src="/js/prettify/prettify.js"></script>
+
+<!-- Template specific -->
+<script src="/js/cleanslate-core.js"></script>
+
+<script>
+    $(function () {
+
+        // Pretty printing
+        prettyPrint();
+
+        $('.content-block').dblclick(function () {
+            if (this.id) {
+                location.href = "/content/edit/" + this.id + "?returnTo=<%= request.url %>";
+            }
+        });
+
+    });
+</script>
+

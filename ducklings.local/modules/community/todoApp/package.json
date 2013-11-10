@@ -1,0 +1,8 @@
+{
+    "name":"todoApp",
+    "label":"Todo Sample App",
+    "description":"Sample code for using calipso for building apps i.e. module-as-app.",
+    "version":"0.1.0",
+    "homepage":"http://www.calip.so/",
+    "author":"Vinod Kulkarni"
+}

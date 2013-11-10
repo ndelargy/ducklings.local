@@ -1,0 +1,155 @@
+{
+  "version": "0.3.0",
+  "installed": true,
+  "database": {
+    "uri": "mongodb://localhost/calipso_prod"
+  },
+  "authentication": {
+    "password": true,
+    "migrate2pbkdf2": false
+  },
+  "server": {
+    "name": "Calipso",
+    "url": "http://localhost:3000",
+    "modulePath": "./modules",
+    "themePath": "./themes",
+    "cluster": {
+      "workers": "",
+      "restartWorkers": true,
+      "maximumRestarts": "1"
+    },
+    "events": {
+      "maxListeners": "500"
+    },
+    "authentication": {
+      "password": true,
+      "migrate2pbkdf2": false,
+      "facebookAppId": "",
+      "facebookAppSecret": "",
+      "googleClientId": "",
+      "googleClientSecret": "",
+      "twitterConsumerKey": "",
+      "twitterConsumerSecret": ""
+    },
+    "loginPath": ""
+  },
+  "calipso": {
+    "repo": {
+      "url": "http://calip.so/repo/api",
+      "defaultVersion": "master"
+    }
+  },
+  "performance": {
+    "cache": {
+      "enabled": false,
+      "ttl": "600"
+    },
+    "watchFiles": true
+  },
+  "session": {
+    "secret": "calipso",
+    "maxAge": ""
+  },
+  "theme": {
+    "default": "calipso",
+    "front": "calipso",
+    "admin": "calipso"
+  },
+  "i18n": {
+    "language": "en",
+    "additive": true
+  },
+  "logging": {
+    "console": {
+      "enabled": true,
+      "level": "info",
+      "timestamp": true,
+      "colorize": true
+    },
+    "file": {
+      "enabled": false,
+      "level": "info",
+      "filepath": "logs/calipso.log",
+      "timestamp": true
+    }
+  },
+  "libraries": {
+    "stylus": {
+      "enable": false,
+      "warn": true,
+      "compress": false
+    },
+    "formidable": {
+      "keepExtensions": true
+    }
+  },
+  "modules": {
+    "admin": {
+      "enabled": true
+    },
+    "screenswiki": {
+      "enabled": false
+    },
+    "todoApp": {
+      "enabled": false
+    },
+    "aloha": {
+      "enabled": true
+    },
+    "assets": {
+      "enabled": true,
+      "config": {
+        "s3key": "",
+        "s3secret": ""
+      }
+    },
+    "content": {
+      "enabled": true
+    },
+    "contentTypes": {
+      "enabled": true
+    },
+    "contentVersions": {
+      "enabled": false
+    },
+    "mail": {
+      "enabled": false
+    },
+    "permissions": {
+      "enabled": true
+    },
+    "scheduler": {
+      "enabled": false
+    },
+    "static": {
+      "enabled": false
+    },
+    "tagcloud": {
+      "enabled": true
+    },
+    "taxonomy": {
+      "enabled": true
+    },
+    "user": {
+      "enabled": true
+    },
+    "dox": {
+      "enabled": true
+    },
+    "repo": {
+      "enabled": true
+    },
+    "checkbox": {
+      "enabled": true
+    },
+    "field": {
+      "enabled": true
+    },
+    "hidden": {
+      "enabled": true
+    },
+    "text": {
+      "enabled": true
+    }
+  }
+}

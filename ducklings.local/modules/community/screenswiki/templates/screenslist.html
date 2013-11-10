@@ -1,0 +1,24 @@
+<h2>All content with type 'screen':</h2>
+
+<table class='tabular table .table-striped'>
+    <tr>
+        <th><%- t('Alias') %></th>
+        <th><%- t('(Edit)') %></th>
+        <th><%- t('Title') %></th>
+        <th><%- t('Author') %></th>
+        <th><%- t('Published') %></th>
+        <th><%- t('Updated') %></th>
+    </tr>
+    <% contents.forEach(function(item) { %>
+    <tr class='content-list-item content-list-item-<%- item.status %> content-type-<%- item.contentType %>'>
+        <td><a href='/screens/view/alias/<%= item.alias %>.html'><%- item.alias %></a></td>
+        <td><a href='/screens/edit/id/<%= item._id %>'>(edit)</a></td>
+        <td><a href='/screens/view/id/<%= item._id %>'><%- item.title %></a></td>
+        <td><%- item.author %></td>
+        <td><%- prettyDate(item.published) %></td>
+        <td><%- prettyDate(item.updated) %></td>
+    </tr>
+    <% }); %>
+</table>
+<%- pager %>
+

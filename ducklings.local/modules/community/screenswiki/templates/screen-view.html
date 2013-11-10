@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title><%- config.get('server:name') %></title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <%- styles %>
+</head>
+<body data-spy="scroll" data-target=".left-navbar">
+<!-- Bootstrap based layout. For responsive design, the spans of all columns should add up to 12. -->
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span11">
+            <!-- messages come here. -->
+            <%- messages %>
+        </div>
+    </div>
+    <div class="container">
+        <%- body %>
+    </div>
+</div>
+<!-- JS
+================================================== -->
+<%- scripts %>
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

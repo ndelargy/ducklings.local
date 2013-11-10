@@ -1,0 +1,15 @@
+{
+    "name":"screenswiki",
+    "label":"Screens Wiki Module",
+    "description":"Module to allow creations/viewing of screens and mockups of product screens.",
+    "version":"0.1.0",
+    "homepage":"http://calip.so",
+    "repository":{
+        "type":"git",
+        "url":"git://github.com/cliftonc/calipso-screens.git"
+    },
+    "author":"Vinod Kulkarni <vinod.kulkarni@gmail.com>",
+    "dependencies":{
+        "jsdom":"*"
+    }
+}

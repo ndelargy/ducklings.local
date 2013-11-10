@@ -1,0 +1,133 @@
+{
+  "version": "0.3.0",
+  "installed": true,
+  "database": {
+    "uri": "mongodb://localhost/calipso"
+  },
+  "server": {
+    "name": "Calipso",
+    "url": "http://localhost:3000",
+    "modulePath": "./modules",
+    "themePath": "./themes",
+    "cluster": {
+      "workers": "",
+      "restartWorkers": true,
+      "maximumRestarts": "1"
+    },
+    "events": {
+      "maxListeners": "500"
+    },
+    "loginPath": "",
+    "authentication": {
+      "password": true,
+      "migrate2pbkdf2": true,
+      "facebookAppId": "232170936869250",
+      "facebookAppSecret": "76eb4111ed7db935a424b2a5219446d1",
+      "googleClientId": "3335216477.apps.googleusercontent.com",
+      "googleClientSecret": "PJMW_uP39nogdu0WpBuqMhtB",
+      "twitterConsumerKey": "JLCGyLzuOK1BjnKPKGyQ",
+      "twitterConsumerSecret": "GNqKfPqtzOcsCtFbGTMqinoATHvBcy1nzCTimeA9M0"
+    }
+  },
+  "calipso": {
+    "repo": {
+      "url": "http://calip.so/repo/api",
+      "defaultVersion": "master"
+    }
+  },
+  "performance": {
+    "cache": {
+      "enabled": false,
+      "ttl": "600"
+    },
+    "watchFiles": true
+  },
+  "session": {
+    "secret": "calipso",
+    "maxAge": ""
+  },
+  "theme": {
+    "default": "cleanslate",
+    "front": "cleanslate",
+    "admin": "cleanslate"
+  },
+  "i18n": {
+    "language": "en",
+    "additive": true
+  },
+  "logging": {
+    "console": {
+      "enabled": true,
+      "level": "silly",
+      "timestamp": true,
+      "colorize": true
+    },
+    "file": {
+      "enabled": false,
+      "level": "info",
+      "filepath": "logs/calipso.log",
+      "timestamp": true
+    }
+  },
+  "libraries": {
+    "stylus": {
+      "enable": true,
+      "warn": true,
+      "compress": false
+    },
+    "formidable": {
+      "keepExtensions": true
+    }
+  },
+  "modules": {
+    "admin": {
+      "enabled": true
+    },
+    "assets": {
+      "enabled": true,
+      "config": {
+        "s3key": "AKIAJCCPMEZHNV4H7TIQ",
+        "s3secret": "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"
+      }
+    },
+    "todoApp": {
+      "enabled": false
+    },
+    "content": {
+      "enabled": true
+    },
+    "contentTypes": {
+      "enabled": true
+    },
+    "contentVersions": {
+      "enabled": false
+    },
+    "mail": {
+      "enabled": false
+    },
+    "permissions": {
+      "enabled": true
+    },
+    "scheduler": {
+      "enabled": false
+    },
+    "static": {
+      "enabled": false
+    },
+    "tagcloud": {
+      "enabled": true
+    },
+    "taxonomy": {
+      "enabled": true
+    },
+    "user": {
+      "enabled": true
+    },
+    "screenswiki": {
+      "enabled": false
+    },
+    "aloha": {
+      "enabled": false
+    }
+  }
+}
